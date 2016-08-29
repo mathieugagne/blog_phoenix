@@ -36,8 +36,10 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :blog_phoenix, BlogPhoenix.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  username: "ims_admin",
+  password: "ims",
   database: "blog_phoenix_dev",
-  hostname: "localhost",
-  pool_size: 10
+  hostname: "mtl-pg-dev1",
+  table_space: "ts_data02",
+  schema_search_path: "ims,public",
+  pool_size: 5

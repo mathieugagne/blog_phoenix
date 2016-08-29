@@ -12,8 +12,11 @@ config :logger, level: :warn
 # Configure your database
 config :blog_phoenix, BlogPhoenix.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "blog_phoenix_test",
-  hostname: "localhost",
+  username: "ims_admin",
+  password: "ims",
+  database: "blog_phoenix_dev",
+  hostname: "mtl-pg-dev1",
+  table_space: "ts_data02",
+  schema_search_path: "ims,public",
   pool: Ecto.Adapters.SQL.Sandbox
+  pool_size: 5
