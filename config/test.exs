@@ -18,5 +18,5 @@ config :blog_phoenix, BlogPhoenix.Repo,
   hostname: "mtl-pg-dev1",
   table_space: "ts_data02",
   schema_search_path: "ims,public",
-  pool: Ecto.Adapters.SQL.Sandbox
+  pool: Ecto.Adapters.SQL.Sandbox,
   pool_size: 5
